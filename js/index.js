@@ -9,7 +9,9 @@ $(document).ready(function(){
 	$(".read-less hide").click(readLess);
   	$(".learn-more").click(learnMore);
 	$(".learn-more-text").click(learnLess);
-  
+  	
+  	event.preventDefault();
+
 	function readMore(){
 		$(".read-more").hide();
 		$("#show-this-click").slideDown();
